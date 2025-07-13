@@ -42,7 +42,7 @@ npm install -g weathery
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/weathery.git
+git clone https://github.com/onbao165/weathery.git
 cd weathery
 
 # Install dependencies
@@ -57,7 +57,7 @@ npm install -g .
 
 ### Download Binaries
 
-Pre-built binaries for Linux, macOS, and Windows are available on the [Releases](https://github.com/yourusername/weathery/releases) page.
+Pre-built binaries for Linux, macOS, and Windows are available on the [Releases](https://github.com/onbao165/weathery/releases) page.
 
 ## Configuration
 
@@ -142,5 +142,5 @@ More examples can be found at [assets](https://github.com/onbao165/weathery/tree
 <br>
 
 <p align="center">
-        <i><code>&copy 2025-present <a href="https://github.com/yourusername">Barooon165</a></code></i>
+        <i><code>&copy 2025-present <a href="https://github.com/onbao165">Barooon165</a></code></i>
 </p>
