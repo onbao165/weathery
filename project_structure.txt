@@ -1,0 +1,22 @@
+stormy-ts/
+├── src/
+│   ├── index.ts                 # Main entry point
+│   ├── weather/
+│   │   ├── config.ts            # Configuration handling
+│   │   ├── display.ts           # Weather display logic
+│   │   ├── fetch.ts             # API fetching logic
+│   │   ├── icons.ts             # ASCII art weather icons
+│   │   └── types.ts             # TypeScript type definitions
+│   └── utils/
+│       └── file.ts              # File system utilities
+├── dist/                        # Compiled JavaScript (generated)
+├── node_modules/                # Dependencies (generated)
+├── .github/
+│   └── workflows/
+│       └── release.yml          # GitHub Actions for releases
+├── assets/                      # Screenshots and images
+├── package.json                 # Node.js package configuration
+├── tsconfig.json                # TypeScript configuration
+├── .gitignore                   # Git ignore file
+├── README.md                    # Project documentation
+└── LICENSE                      # License file

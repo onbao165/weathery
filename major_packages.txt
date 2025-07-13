@@ -1,0 +1,5 @@
+axios: For making HTTP requests to weather APIs
+chalk: For terminal colors (equivalent to Go's fatih/color)
+commander: For parsing command-line arguments (equivalent to Go's flag package)
+conf: For managing configuration files (equivalent to Go's TOML handling)
+figlet: For creating ASCII art text
