@@ -1,10 +1,21 @@
 {
-  "name": "stormy-ts",
+  "name": "weathery",
   "version": "0.1.0",
   "description": "Minimal, customizable and neofetch-like weather CLI written in TypeScript",
   "main": "dist/index.js",
   "bin": {
-    "stormy-ts": "./dist/index.js"
+    "weathery": "./dist/index.js"
+  },
+  "pkg": {
+    "assets": [
+      "dist/**/*"
+    ],
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
   },
   "scripts": {
     "build": "tsc",
@@ -12,7 +23,8 @@
     "dev": "ts-node src/index.ts",
     "lint": "eslint . --ext .ts",
     "test": "jest",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "package": "pkg ."
   },
   "keywords": [
     "weather",

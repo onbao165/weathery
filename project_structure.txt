@@ -1,4 +1,4 @@
-stormy-ts/
+weathery/
 ├── src/
 │   ├── index.ts                 # Main entry point
 │   ├── weather/
@@ -7,8 +7,6 @@ stormy-ts/
 │   │   ├── fetch.ts             # API fetching logic
 │   │   ├── icons.ts             # ASCII art weather icons
 │   │   └── types.ts             # TypeScript type definitions
-│   └── utils/
-│       └── file.ts              # File system utilities
 ├── dist/                        # Compiled JavaScript (generated)
 ├── node_modules/                # Dependencies (generated)
 ├── .github/
@@ -18,5 +16,4 @@ stormy-ts/
 ├── package.json                 # Node.js package configuration
 ├── tsconfig.json                # TypeScript configuration
 ├── .gitignore                   # Git ignore file
-├── README.md                    # Project documentation
-└── LICENSE                      # License file
+└── README.md                    # Project documentation
