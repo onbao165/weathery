@@ -12,10 +12,7 @@ Minimal, customizable and neofetch-like weather CLI inspired by
 weathery's idea, structure, and design are based off
 [stormy](https://github.com/ashish0kumar/stormy), but it's written in TypeScript instead of Golang.
 
-I built this because I really liked the concept of a Neofetch-style weather CLI.
-The simplicity and visual appeal of _rainy_ instantly clicked with me, and I
-wanted to recreate that experience in TypeScript — partly for my own satisfaction and
-partly because I enjoy building clean CLI tools.
+I built this because I have large interest in CLI tools and the concept of this simple _stormy_ app just clicked. Besides, I believe building useful projects is an effective way to learn new languages.
 
 ## Features
 
@@ -134,9 +131,8 @@ weathery --show-config
 ## Examples
 
 ![](./assets/1.png)
-![](./assets/4.png)
-![](./assets/3.png)
-![](./assets/2.png)
+<br>
+More examples can be found at [assets](https://github.com/onbao165/weathery/tree/main/assets)
 
 ## Acknowledgements
 
