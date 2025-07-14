@@ -7,8 +7,11 @@
     "weathery": "./dist/index.js"
   },
   "pkg": {
+    "scripts": [
+      "node_modules/axios/dist/node/axios.cjs"
+    ],
     "assets": [
-      "dist/**/*"
+      "node_modules/axios/dist/**/*"
     ],
     "targets": [
       "node18-linux-x64",
@@ -49,6 +52,7 @@
     "@typescript-eslint/parser": "^6.7.0",
     "eslint": "^8.49.0",
     "jest": "^29.7.0",
+    "pkg": "^5.8.1",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
