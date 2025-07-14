@@ -1,17 +1,17 @@
 {
   "name": "weathery",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "Minimal, customizable and neofetch-like weather CLI written in TypeScript",
   "main": "dist/index.js",
   "bin": {
     "weathery": "./dist/index.js"
   },
   "pkg": {
-    "scripts": [
-      "node_modules/axios/dist/node/axios.cjs"
-    ],
     "assets": [
-      "node_modules/axios/dist/**/*"
+      "node_modules/axios/dist/**/*",
+      "node_modules/chalk/**/*",
+      "node_modules/conf/**/*",
+      "node_modules/figlet/fonts/**"
     ],
     "targets": [
       "node18-linux-x64",

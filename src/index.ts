@@ -24,7 +24,7 @@ async function main() {
   program
     .name("weathery")
     .description("Minimal, customizable and neofetch-like weather CLI written in TypeScript")
-    .version("0.1.0")
+    .version("1.0.2")
     .option("-c, --city <city>", "City name")
     .option("-u, --units <units>", "Units (metric/imperial)", "metric")
     .option("--show-city-name [boolean]", "Show city name in output (true/false)", parseBoolean)
