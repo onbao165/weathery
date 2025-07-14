@@ -23,18 +23,31 @@ jobs:
         run: npm ci
       - name: Build TypeScript
         run: npm run build
-      - name: Install pkg globally
-        run: npm install -g pkg
       - name: Package application
-        run: >
-          pkg . --targets node18-linux-x64,node18-macos-x64,node18-win-x64 --output dist/weathery
+        run: npx pkg . --targets node18-linux-x64,node18-macos-x64,node18-win-x64
+          --output dist/weathery
+      - name: Prepare Release Assets
+        run: |
+          # For Linux
+          mv dist/weathery-linux dist/weathery
+          tar -czvf dist/weathery-linux-x64.tar.gz -C dist weathery
+          rm dist/weathery
+
+          # For macOS
+          mv dist/weathery-macos dist/weathery
+          tar -czvf dist/weathery-macos-x64.tar.gz -C dist weathery
+          rm dist/weathery
+
+          # For Windows
+          mv dist/weathery-win.exe dist/weathery.exe
+          zip -j dist/weathery-windows-x64.zip dist/weathery.exe
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            dist/weathery-linux
-            dist/weathery-macos
-            dist/weathery-win.exe
+            dist/weathery-linux-x64.tar.gz
+            dist/weathery-macos-x64.tar.gz
+            dist/weathery-windows-x64.zip
           draft: false
           prerelease: false
         env:

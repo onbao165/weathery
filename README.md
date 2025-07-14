@@ -27,44 +27,38 @@ I built this because I have large interest in CLI tools and the concept of this 
 
 ## Installation
 
-### Prerequisites
+Download the latest binaries from the [**Releases Page**](https://www.google.com/search?q=https://github.com/barooon165/weathery/releases/latest).
 
-- Node.js 16.0.0 or higher
-- **Optional:** An API key from [OpenWeatherMap](https://openweathermap.org/api)
+### macOS & Linux
 
-### Via npm
-
-```bash
-npm install -g weathery
-```
-
-### Build from Source
+Download the appropriate `.tar.gz` archive and run the following commands from your terminal:
 
 ```bash
-# Clone the repository
-git clone https://github.com/onbao165/weathery.git
-cd weathery
+# Replace <archive-name> with the downloaded file
+tar -xzvf <archive-name>
+chmod +x weathery
+sudo mv weathery /usr/local/bin/
 
-# Install dependencies
-npm install
-
-# Build the application
-npm run build
-
-# Install globally
-npm install -g .
+# Verify installation
+weathery --version
 ```
 
-### Download Binaries
+### Windows
 
-Pre-built binaries for Linux, macOS, and Windows are available on the [Releases](https://github.com/onbao165/weathery/releases) page.
+1.  Download the `.zip` archive and extract the `weathery.exe` file.
+2.  Move `weathery.exe` to a permanent directory (e.g., `C:\Program Files\weathery`).
+3.  Add this directory to your system's `PATH` environment variable to make the command accessible globally.
+4.  Open a **new** terminal and verify the installation.
+    ```powershell
+    weathery --version
+    ```
 
 ## Configuration
 
 `weathery` will create a default configuration file on first run:
 
-- Linux/macOS: `~/.config/weathery/config.json`
-- Windows: `%APPDATA%\weathery\config.json`
+- Linux/macOS: `~/.config/weathery/Config/config.json`
+- Windows: `%APPDATA%\weathery\Config\config.json`
 
 ### Configuration Options
 
